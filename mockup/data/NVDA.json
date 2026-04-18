@@ -1,0 +1,223 @@
+{
+  "fetchedAt": "2026-04-18T19:22:24.662Z",
+  "center": {
+    "ticker": "NVDA",
+    "profile": {
+      "country": "US",
+      "currency": "USD",
+      "estimateCurrency": "USD",
+      "exchange": "NASDAQ NMS - GLOBAL MARKET",
+      "finnhubIndustry": "Semiconductors",
+      "ipo": "1999-01-22",
+      "logo": "https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/NVDA.png",
+      "marketCapitalization": 4900824.150804987,
+      "name": "NVIDIA Corp",
+      "phone": "13026365401",
+      "shareOutstanding": 24300,
+      "ticker": "NVDA",
+      "weburl": "https://www.nvidia.com/"
+    },
+    "quote": {
+      "c": 201.66,
+      "d": 3.31,
+      "dp": 1.6688,
+      "h": 201.7,
+      "l": 199.27,
+      "o": 199.91,
+      "pc": 198.35,
+      "t": 1776456000
+    }
+  },
+  "peers": [
+    {
+      "ticker": "AVGO",
+      "profile": {
+        "country": "US",
+        "currency": "USD",
+        "estimateCurrency": "USD",
+        "exchange": "NASDAQ NMS - GLOBAL MARKET",
+        "finnhubIndustry": "Semiconductors",
+        "ipo": "2009-08-06",
+        "logo": "https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/AVGO.png",
+        "marketCapitalization": 1924831.9219118552,
+        "name": "Broadcom Inc",
+        "phone": "13026365400",
+        "shareOutstanding": 4734.67,
+        "ticker": "AVGO",
+        "weburl": "https://www.broadcom.com"
+      },
+      "quote": {
+        "c": 406.56,
+        "d": 8.09,
+        "dp": 2.0303,
+        "h": 406.725,
+        "l": 399.81,
+        "o": 400.90999999999997,
+        "pc": 398.47,
+        "t": 1776456000
+      }
+    },
+    {
+      "ticker": "MU",
+      "profile": {
+        "country": "US",
+        "currency": "USD",
+        "estimateCurrency": "USD",
+        "exchange": "NASDAQ NMS - GLOBAL MARKET",
+        "finnhubIndustry": "Semiconductors",
+        "ipo": "1984-06-01",
+        "logo": "https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/MU.png",
+        "marketCapitalization": 513197.9277104869,
+        "name": "Micron Technology Inc",
+        "phone": "18009279800",
+        "shareOutstanding": 1127.73,
+        "ticker": "MU",
+        "weburl": "https://www.micron.com/"
+      },
+      "quote": {
+        "c": 455.09,
+        "d": -2.14,
+        "dp": -0.468,
+        "h": 470.97,
+        "l": 452.2,
+        "o": 466.86,
+        "pc": 457.23,
+        "t": 1776456000
+      }
+    },
+    {
+      "ticker": "AMD",
+      "profile": {
+        "country": "US",
+        "currency": "USD",
+        "estimateCurrency": "USD",
+        "exchange": "NASDAQ NMS - GLOBAL MARKET",
+        "finnhubIndustry": "Semiconductors",
+        "ipo": "1979-10-15",
+        "logo": "https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/AMD.png",
+        "marketCapitalization": 453870.01918230363,
+        "name": "Advanced Micro Devices Inc",
+        "phone": "13026587581",
+        "shareOutstanding": 1630.34,
+        "ticker": "AMD",
+        "weburl": "https://www.amd.com/"
+      },
+      "quote": {
+        "c": 278.41,
+        "d": 0.15,
+        "dp": 0.0539,
+        "h": 281.05,
+        "l": 274.14,
+        "o": 281.01,
+        "pc": 278.26,
+        "t": 1776456000
+      }
+    },
+    {
+      "ticker": "INTC",
+      "profile": {
+        "country": "US",
+        "currency": "USD",
+        "estimateCurrency": "USD",
+        "exchange": "NASDAQ NMS - GLOBAL MARKET",
+        "finnhubIndustry": "Semiconductors",
+        "ipo": "1971-10-13",
+        "logo": "https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/INTC.png",
+        "marketCapitalization": 343939.168945,
+        "name": "Intel Corp",
+        "phone": "14087658080",
+        "shareOutstanding": 5021.01,
+        "ticker": "INTC",
+        "weburl": "https://www.intel.com/"
+      },
+      "quote": {
+        "c": 68.52,
+        "d": 0.02,
+        "dp": 0.0292,
+        "h": 70.325,
+        "l": 67.735,
+        "o": 68.86,
+        "pc": 68.5,
+        "t": 1776456000
+      }
+    },
+    {
+      "ticker": "TXN",
+      "profile": {
+        "country": "US",
+        "currency": "USD",
+        "estimateCurrency": "USD",
+        "exchange": "NASDAQ NMS - GLOBAL MARKET",
+        "finnhubIndustry": "Semiconductors",
+        "ipo": "1953-10-01",
+        "logo": "https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/TXN.png",
+        "marketCapitalization": 209242.69946463298,
+        "name": "Texas Instruments Inc",
+        "phone": "13026587581",
+        "shareOutstanding": 910.46,
+        "ticker": "TXN",
+        "weburl": "https://www.ti.com/"
+      },
+      "quote": {
+        "c": 229.84,
+        "d": 6.74,
+        "dp": 3.0211,
+        "h": 230.53,
+        "l": 224.67,
+        "o": 228.26999999999998,
+        "pc": 223.1,
+        "t": 1776456000
+      }
+    }
+  ],
+  "news": [
+    {
+      "headline": "I Asked ChatGPT How the Stock Market Would Look If We Ignored the 7 Biggest Stocks",
+      "source": "Yahoo",
+      "datetime": 1776533946,
+      "summary": "See how removing the Magnificent 7 could flatten S&P 500 returns, reshape 401(k) portfolios and change retirement growth for investors. Find out more now.",
+      "url": "https://finnhub.io/api/news?id=97bb4cfbec49d76df07a746c2e97adcb18645b2976090aff30c994723022911d",
+      "image": "https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png"
+    },
+    {
+      "headline": "Will There Ever Be Another Dogecoin or Shiba Inu?",
+      "source": "Yahoo",
+      "datetime": 1776533700,
+      "summary": "If a new rock star meme coin emerges, remember that you don't need to buy it.",
+      "url": "https://finnhub.io/api/news?id=6d3c8d57db9e1c1003796c273dc77a5cf1b9f9ef645dc0c0df5a9ae0bec7443f",
+      "image": "https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png"
+    },
+    {
+      "headline": "Broadcom vs. AMD: Which AI Chipmaker Is the Better Buy?",
+      "source": "Yahoo",
+      "datetime": 1776531000,
+      "summary": "Broadcom and AMD both have excellent business models and are at the center of the AI chip boom, making this a tough race to call.",
+      "url": "https://finnhub.io/api/news?id=a4b4d244bf87175090029389bd42bc654bcfe6ced4befd7566d5b5d7053a72f0",
+      "image": "https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png"
+    },
+    {
+      "headline": "Where Will Pfizer Stock Be in 3 Years?",
+      "source": "Yahoo",
+      "datetime": 1776529200,
+      "summary": "The healthcare giant has been investing heavily in its future growth.",
+      "url": "https://finnhub.io/api/news?id=4cf7f9c5d51f6a300e6c6bc2e367c89f7fbd002860c834dd0927ed73909e7c26",
+      "image": "https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png"
+    },
+    {
+      "headline": "Assessing the Rise of Chinese EV Manufacturers",
+      "source": "Yahoo",
+      "datetime": 1776529141,
+      "summary": "Chinese electric vehicles are quickly becoming a dominant force in the industry, but it hasn’t necessarily translated into profits.",
+      "url": "https://finnhub.io/api/news?id=15e74dd6f8a8ed447c6f77049b2847941af43a269306dde041e8acc98285b0a0",
+      "image": "https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png"
+    },
+    {
+      "headline": "Top 5 AI Stocks Under $200",
+      "source": "Yahoo",
+      "datetime": 1776528600,
+      "summary": "Artificial intelligence (AI) investing doesn't need to break the bank.",
+      "url": "https://finnhub.io/api/news?id=1c17cf0823ee2400634b8a98e7fb03491e4566ed889b9ac248e83d688481c18b",
+      "image": "https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png"
+    }
+  ]
+}

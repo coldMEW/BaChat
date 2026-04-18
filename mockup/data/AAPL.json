@@ -1,0 +1,223 @@
+{
+  "fetchedAt": "2026-04-18T19:22:26.743Z",
+  "center": {
+    "ticker": "AAPL",
+    "profile": {
+      "country": "US",
+      "currency": "USD",
+      "estimateCurrency": "USD",
+      "exchange": "NASDAQ NMS - GLOBAL MARKET",
+      "finnhubIndustry": "Technology",
+      "ipo": "1980-12-12",
+      "logo": "https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/AAPL.png",
+      "marketCapitalization": 3967284.27526732,
+      "name": "Apple Inc",
+      "phone": "14089961010",
+      "shareOutstanding": 14681.14,
+      "ticker": "AAPL",
+      "weburl": "https://www.apple.com/"
+    },
+    "quote": {
+      "c": 270.25,
+      "d": 6.85,
+      "dp": 2.6006,
+      "h": 272.3,
+      "l": 266.72,
+      "o": 266.96999999999997,
+      "pc": 263.4,
+      "t": 1776456000
+    }
+  },
+  "peers": [
+    {
+      "ticker": "SNDK",
+      "profile": {
+        "country": "US",
+        "currency": "USD",
+        "estimateCurrency": "USD",
+        "exchange": "NASDAQ NMS - GLOBAL MARKET",
+        "finnhubIndustry": "Technology",
+        "ipo": "2025-02-13",
+        "logo": "https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/950906460416.png",
+        "marketCapitalization": 135939.01064131098,
+        "name": "Sandisk Corp",
+        "phone": "18009279800",
+        "shareOutstanding": 147.6,
+        "ticker": "SNDK",
+        "weburl": "https://www.sandisk.com/"
+      },
+      "quote": {
+        "c": 921.01,
+        "d": 1.54,
+        "dp": 0.1675,
+        "h": 930.5,
+        "l": 886.0001,
+        "o": 920.85,
+        "pc": 919.47,
+        "t": 1776456000
+      }
+    },
+    {
+      "ticker": "DELL",
+      "profile": {
+        "country": "US",
+        "currency": "USD",
+        "estimateCurrency": "USD",
+        "exchange": "NEW YORK STOCK EXCHANGE, INC.",
+        "finnhubIndustry": "Technology",
+        "ipo": "2016-08-01",
+        "logo": "https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/DELL.png",
+        "marketCapitalization": 126921.85343125797,
+        "name": "Dell Technologies Inc",
+        "phone": "18002893355",
+        "shareOutstanding": 645.75,
+        "ticker": "DELL",
+        "weburl": "https://www.dell.com/en-in"
+      },
+      "quote": {
+        "c": 196.57,
+        "d": 3.48,
+        "dp": 1.8023,
+        "h": 197.3387,
+        "l": 191.75,
+        "o": 192.84,
+        "pc": 193.09,
+        "t": 1776456000
+      }
+    },
+    {
+      "ticker": "WDC",
+      "profile": {
+        "country": "US",
+        "currency": "USD",
+        "estimateCurrency": "USD",
+        "exchange": "NASDAQ NMS - GLOBAL MARKET",
+        "finnhubIndustry": "Technology",
+        "ipo": "1980-03-17",
+        "logo": "https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/WDC.png",
+        "marketCapitalization": 125522.01491135069,
+        "name": "Western Digital Corp",
+        "phone": "19496727000",
+        "shareOutstanding": 339.04,
+        "ticker": "WDC",
+        "weburl": "https://www.westerndigital.com/"
+      },
+      "quote": {
+        "c": 372.54,
+        "d": 10.85,
+        "dp": 2.9998,
+        "h": 378.98,
+        "l": 366.18,
+        "o": 370.36,
+        "pc": 361.69,
+        "t": 1776456000
+      }
+    },
+    {
+      "ticker": "HPE",
+      "profile": {
+        "country": "US",
+        "currency": "USD",
+        "estimateCurrency": "USD",
+        "exchange": "NEW YORK STOCK EXCHANGE, INC.",
+        "finnhubIndustry": "Technology",
+        "ipo": "2015-10-19",
+        "logo": "https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/HPE.png",
+        "marketCapitalization": 35082.02226408962,
+        "name": "Hewlett Packard Enterprise Co",
+        "phone": "13026587581",
+        "shareOutstanding": 1326.85,
+        "ticker": "HPE",
+        "weburl": "https://www.hpe.com/"
+      },
+      "quote": {
+        "c": 26.45,
+        "d": 0.56,
+        "dp": 2.163,
+        "h": 26.56,
+        "l": 25.895,
+        "o": 26.110000000000003,
+        "pc": 25.89,
+        "t": 1776456000
+      }
+    },
+    {
+      "ticker": "NTAP",
+      "profile": {
+        "country": "US",
+        "currency": "USD",
+        "estimateCurrency": "USD",
+        "exchange": "NASDAQ NMS - GLOBAL MARKET",
+        "finnhubIndustry": "Technology",
+        "ipo": "1995-11-21",
+        "logo": "https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/NTAP.png",
+        "marketCapitalization": 20626.948217240068,
+        "name": "NetApp Inc",
+        "phone": "14088226000",
+        "shareOutstanding": 197.33,
+        "ticker": "NTAP",
+        "weburl": "https://www.netapp.com/"
+      },
+      "quote": {
+        "c": 104.55,
+        "d": 0.87,
+        "dp": 0.8391,
+        "h": 105.7,
+        "l": 103,
+        "o": 103.81,
+        "pc": 103.68,
+        "t": 1776456000
+      }
+    }
+  ],
+  "news": [
+    {
+      "headline": "I Asked ChatGPT How the Stock Market Would Look If We Ignored the 7 Biggest Stocks",
+      "source": "Yahoo",
+      "datetime": 1776533946,
+      "summary": "See how removing the Magnificent 7 could flatten S&P 500 returns, reshape 401(k) portfolios and change retirement growth for investors. Find out more now.",
+      "url": "https://finnhub.io/api/news?id=97bb4cfbec49d76df07a746c2e97adcb18645b2976090aff30c994723022911d",
+      "image": "https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png"
+    },
+    {
+      "headline": "There Is Incredible News for Apple Investors. Will It Be Enough to Send the Stock Higher?",
+      "source": "Yahoo",
+      "datetime": 1776528060,
+      "summary": "Apple did in Q1 what others in the smartphone industry couldn't.",
+      "url": "https://finnhub.io/api/news?id=7961eb647bca41d0fb08260c09f154269845bd76d068313b8077a2196d1bc320",
+      "image": "https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png"
+    },
+    {
+      "headline": "Berkshire May Have Sold $15 Billion of Stocks Run by Former Manager",
+      "source": "Yahoo",
+      "datetime": 1776527880,
+      "summary": "CEO Greg Abel decided to unload the stocks that had been managed by Todd Combs, who left in December for JPMorgan Chase.",
+      "url": "https://finnhub.io/api/news?id=b9ff488ba4ebefb939073ef8a12836a320bec53b375705572b6aa2ace79a623b",
+      "image": "https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png"
+    },
+    {
+      "headline": "Now Streaming: Netflix falls after underwhelming Q2 guidance",
+      "source": "Yahoo",
+      "datetime": 1776526843,
+      "summary": "“Now Streaming” is The Fly’s weekly recap of the stories surrounding the biggest content streamers.Claim 30% Off TipRanksUnlock hedge fund-level data and powerful investing tools for smarter, sharper decisions Discover top-performing stock ideas and upgrade to a portfolio of market leaders with Smart Investor Picks PLAYING THIS WEEKEND: Among this weekend’s most notable new streaming content is the first three episodes of “Margo’s Got Money Troubles”, a new dramedy starring Elle Fanning, Michell",
+      "url": "https://finnhub.io/api/news?id=1e34b11ce06819f2f9b6f61ab86e181f9ae2ffeac4d5a00ea3d80c2331aef95f",
+      "image": "https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png"
+    },
+    {
+      "headline": "Have village names recently disappeared from Apple Maps in Lebanon?",
+      "source": "Finnhub",
+      "datetime": 1776524467,
+      "summary": "Copyright © BusinessAMBE 2023Key takeawaysOnline claims that Apple Maps has removed village names in southern Lebanon are unfounded.The patchy coverage of Apple Maps in Lebanon is the result...",
+      "url": "https://finnhub.io/api/news?id=ce5db0b917e9f62763dac47b56842f4ea1fb3abcb04839699b05e6431bca264f",
+      "image": ""
+    },
+    {
+      "headline": "Apple's Smart Glasses Could Launch in 2027. Here's Why Apple Could Succeed Where Others Have Failed.",
+      "source": "Yahoo",
+      "datetime": 1776519600,
+      "summary": "Apple's long history of successfully pairing great hardware and software together could be a winning combination again.",
+      "url": "https://finnhub.io/api/news?id=35968414ebaef5557bb455e406c7c6024e1413d8434d44d4245c8f807d444562",
+      "image": "https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "fetchedAt": "2026-04-18T19:22:29.526Z",
+  "center": {
+    "ticker": "SOXL",
+    "profile": {
+      "ticker": "SOXL",
+      "name": "Direxion Daily Semiconductor Bull 3X",
+      "finnhubIndustry": "Leveraged ETF (Semiconductors)",
+      "marketCapitalization": 14500,
+      "logo": "",
+      "exchange": "NYSE ARCA",
+      "currency": "USD"
+    },
+    "quote": {
+      "c": 94.7,
+      "d": 6.33,
+      "dp": 7.1631,
+      "h": 94.75,
+      "l": 90.66,
+      "o": 93.205,
+      "pc": 88.37,
+      "t": 1776456000
+    }
+  },
+  "peers": [
+    {
+      "ticker": "NVDA",
+      "profile": {
+        "country": "US",
+        "currency": "USD",
+        "estimateCurrency": "USD",
+        "exchange": "NASDAQ NMS - GLOBAL MARKET",
+        "finnhubIndustry": "Semiconductors",
+        "ipo": "1999-01-22",
+        "logo": "https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/NVDA.png",
+        "marketCapitalization": 4900824.150804987,
+        "name": "NVIDIA Corp",
+        "phone": "13026365401",
+        "shareOutstanding": 24300,
+        "ticker": "NVDA",
+        "weburl": "https://www.nvidia.com/"
+      },
+      "quote": {
+        "c": 201.66,
+        "d": 3.31,
+        "dp": 1.6688,
+        "h": 201.7,
+        "l": 199.27,
+        "o": 199.91,
+        "pc": 198.35,
+        "t": 1776456000
+      }
+    },
+    {
+      "ticker": "AVGO",
+      "profile": {
+        "country": "US",
+        "currency": "USD",
+        "estimateCurrency": "USD",
+        "exchange": "NASDAQ NMS - GLOBAL MARKET",
+        "finnhubIndustry": "Semiconductors",
+        "ipo": "2009-08-06",
+        "logo": "https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/AVGO.png",
+        "marketCapitalization": 1924831.9219118552,
+        "name": "Broadcom Inc",
+        "phone": "13026365400",
+        "shareOutstanding": 4734.67,
+        "ticker": "AVGO",
+        "weburl": "https://www.broadcom.com"
+      },
+      "quote": {
+        "c": 406.56,
+        "d": 8.09,
+        "dp": 2.0303,
+        "h": 406.725,
+        "l": 399.81,
+        "o": 400.90999999999997,
+        "pc": 398.47,
+        "t": 1776456000
+      }
+    },
+    {
+      "ticker": "AMD",
+      "profile": {
+        "country": "US",
+        "currency": "USD",
+        "estimateCurrency": "USD",
+        "exchange": "NASDAQ NMS - GLOBAL MARKET",
+        "finnhubIndustry": "Semiconductors",
+        "ipo": "1979-10-15",
+        "logo": "https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/AMD.png",
+        "marketCapitalization": 453870.01918230363,
+        "name": "Advanced Micro Devices Inc",
+        "phone": "13026587581",
+        "shareOutstanding": 1630.34,
+        "ticker": "AMD",
+        "weburl": "https://www.amd.com/"
+      },
+      "quote": {
+        "c": 278.41,
+        "d": 0.15,
+        "dp": 0.0539,
+        "h": 281.05,
+        "l": 274.14,
+        "o": 281.01,
+        "pc": 278.26,
+        "t": 1776456000
+      }
+    },
+    {
+      "ticker": "TSM",
+      "profile": {
+        "country": "TW",
+        "currency": "TWD",
+        "estimateCurrency": "TWD",
+        "exchange": "TAIWAN STOCK EXCHANGE",
+        "finnhubIndustry": "Semiconductors",
+        "ipo": "1994-09-05",
+        "logo": "https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/2330.TW.png",
+        "marketCapitalization": 54069311.367188,
+        "name": "Taiwan Semiconductor Manufacturing Co Ltd",
+        "phone": "88635636688",
+        "shareOutstanding": 25932.52,
+        "ticker": "2330.TW",
+        "weburl": "https://www.tsmc.com/"
+      },
+      "quote": {
+        "c": 370.52,
+        "d": 7.17,
+        "dp": 1.9733,
+        "h": 375.58,
+        "l": 365.14,
+        "o": 373.21,
+        "pc": 363.35,
+        "t": 1776456000
+      }
+    },
+    {
+      "ticker": "INTC",
+      "profile": {
+        "country": "US",
+        "currency": "USD",
+        "estimateCurrency": "USD",
+        "exchange": "NASDAQ NMS - GLOBAL MARKET",
+        "finnhubIndustry": "Semiconductors",
+        "ipo": "1971-10-13",
+        "logo": "https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/INTC.png",
+        "marketCapitalization": 343939.168945,
+        "name": "Intel Corp",
+        "phone": "14087658080",
+        "shareOutstanding": 5021.01,
+        "ticker": "INTC",
+        "weburl": "https://www.intel.com/"
+      },
+      "quote": {
+        "c": 68.52,
+        "d": 0.02,
+        "dp": 0.0292,
+        "h": 70.325,
+        "l": 67.735,
+        "o": 68.86,
+        "pc": 68.5,
+        "t": 1776456000
+      }
+    }
+  ],
+  "news": [
+    {
+      "headline": "Here's How Much You Would Have Made Owning Direxion Daily Semiconductor Bull 3X ETF Stock In The Last 10 Years",
+      "source": "Benzinga",
+      "datetime": 1775649626,
+      "summary": " ",
+      "url": "https://finnhub.io/api/news?id=eba28c325a149c07cd035aa113b927158f6f365a895f11a5b259037998163707",
+      "image": ""
+    },
+    {
+      "headline": "Here's How Much You Would Have Made Owning Direxion Daily Semiconductor Bull 3X ETF Stock In The Last 15 Years",
+      "source": "Benzinga",
+      "datetime": 1774896329,
+      "summary": " ",
+      "url": "https://finnhub.io/api/news?id=b5353d41c202fbd14a4befc459710a878246cfeda2c36aef7a592379ae1ae0e6",
+      "image": ""
+    },
+    {
+      "headline": "Dip-Buyers Ride Longest Negative Signal Since 2022 To Next Tactical Bottom",
+      "source": "SeekingAlpha",
+      "datetime": 1774768689,
+      "summary": "As dip-buyers capitulate, NVDA and SOXL mark a tactical bottom for signal portfolios, beating S&P since October. See why timing and MDA are key.",
+      "url": "https://finnhub.io/api/news?id=8b7335b567c43136cf10371906bcd21551c3e871fe40d56818d7bee2703e56b5",
+      "image": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1281961678/image_1281961678.jpg?io=getty-c-w1536"
+    },
+    {
+      "headline": "Echoes Of 2022: Bear Bounces As ETF Signal Portfolio Leads S&P 500 By Over 23%",
+      "source": "SeekingAlpha",
+      "datetime": 1774163255,
+      "summary": "Our ETF portfolio beats the S&P 500 by 23% YTD using energy and tech timing after gaining 33.6% in 2025. Find out why this sector momentum strategy works.",
+      "url": "https://finnhub.io/api/news?id=d66a904f91a2bbd6149fbb9ac3b02023749ebb4555de822654a40a6fe927a62d",
+      "image": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1215907498/image_1215907498.jpg?io=getty-c-w1536"
+    },
+    {
+      "headline": "2X The Hype, 3X The Pain: Super Micro's AI Tech Smuggling Scandal Leads To A 60% ETF Collapse",
+      "source": "Benzinga",
+      "datetime": 1774018691,
+      "summary": "SMCX plunged 58% after SMCI&#39;s sharp decline, highlighting how leveraged ETFs can amplify losses during sudden market shocks and stock-specific risks.",
+      "url": "https://finnhub.io/api/news?id=545e25b437015556ac2e1355c1788f7485f83ca7056f2286bb1157ff5ebf1a33",
+      "image": "https://cdn.benzinga.com/files/images/story/2026/03/20/Supermicro-Sign-At-Headquarters-In-San-J.jpeg?width=2048&height=1536"
+    }
+  ]
+}

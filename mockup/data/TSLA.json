@@ -1,0 +1,223 @@
+{
+  "fetchedAt": "2026-04-18T19:22:28.753Z",
+  "center": {
+    "ticker": "TSLA",
+    "profile": {
+      "country": "US",
+      "currency": "USD",
+      "estimateCurrency": "USD",
+      "exchange": "NASDAQ NMS - GLOBAL MARKET",
+      "finnhubIndustry": "Automobiles",
+      "ipo": "2010-06-29",
+      "logo": "https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/TSLA.png",
+      "marketCapitalization": 1503299.2380812312,
+      "name": "Tesla Inc",
+      "phone": "15125168177",
+      "shareOutstanding": 3752.43,
+      "ticker": "TSLA",
+      "weburl": "https://www.tesla.com/"
+    },
+    "quote": {
+      "c": 400.64,
+      "d": 11.74,
+      "dp": 3.0188,
+      "h": 409.28,
+      "l": 391.65,
+      "o": 395.93,
+      "pc": 388.9,
+      "t": 1776456000
+    }
+  },
+  "peers": [
+    {
+      "ticker": "GM",
+      "profile": {
+        "country": "US",
+        "currency": "USD",
+        "estimateCurrency": "USD",
+        "exchange": "NEW YORK STOCK EXCHANGE, INC.",
+        "finnhubIndustry": "Automobiles",
+        "ipo": "2010-08-20",
+        "logo": "https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/GM.png",
+        "marketCapitalization": 73510.67213688609,
+        "name": "General Motors Co",
+        "phone": "13026365400",
+        "shareOutstanding": 903.97,
+        "ticker": "GM",
+        "weburl": "https://www.gm.com/"
+      },
+      "quote": {
+        "c": 81.34,
+        "d": 3.29,
+        "dp": 4.2152,
+        "h": 82.67,
+        "l": 79.4,
+        "o": 79.41000000000001,
+        "pc": 78.05,
+        "t": 1776456000
+      }
+    },
+    {
+      "ticker": "F",
+      "profile": {
+        "country": "US",
+        "currency": "USD",
+        "estimateCurrency": "USD",
+        "exchange": "NEW YORK STOCK EXCHANGE, INC.",
+        "finnhubIndustry": "Automobiles",
+        "ipo": "1956-03-07",
+        "logo": "https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/F.png",
+        "marketCapitalization": 51344.54624196463,
+        "name": "Ford Motor Co",
+        "phone": "13026587581",
+        "shareOutstanding": 4011.08,
+        "ticker": "F",
+        "weburl": "https://www.ford.com/"
+      },
+      "quote": {
+        "c": 12.88,
+        "d": 0.44,
+        "dp": 3.537,
+        "h": 13.04,
+        "l": 12.62,
+        "o": 12.65,
+        "pc": 12.44,
+        "t": 1776456000
+      }
+    },
+    {
+      "ticker": "RIVN",
+      "profile": {
+        "country": "US",
+        "currency": "USD",
+        "estimateCurrency": "USD",
+        "exchange": "NASDAQ NMS - GLOBAL MARKET",
+        "finnhubIndustry": "Automobiles",
+        "ipo": "2021-11-10",
+        "logo": "https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/950373444066.png",
+        "marketCapitalization": 21382.2529727164,
+        "name": "Rivian Automotive Inc",
+        "phone": "18887484261",
+        "shareOutstanding": 1240.99,
+        "ticker": "RIVN",
+        "weburl": "https://rivian.com/"
+      },
+      "quote": {
+        "c": 17.24,
+        "d": 0.35,
+        "dp": 2.0722,
+        "h": 17.775,
+        "l": 17.09,
+        "o": 17.125,
+        "pc": 16.89,
+        "t": 1776456000
+      }
+    },
+    {
+      "ticker": "THO",
+      "profile": {
+        "country": "US",
+        "currency": "USD",
+        "estimateCurrency": "USD",
+        "exchange": "NEW YORK STOCK EXCHANGE, INC.",
+        "finnhubIndustry": "Automobiles",
+        "ipo": "1984-01-11",
+        "logo": "https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/THO.png",
+        "marketCapitalization": 4236.602504478461,
+        "name": "Thor Industries Inc",
+        "phone": "13026587581",
+        "shareOutstanding": 52.6,
+        "ticker": "THO",
+        "weburl": "https://www.thorindustries.com/"
+      },
+      "quote": {
+        "c": 80.57,
+        "d": 2.34,
+        "dp": 2.9912,
+        "h": 85.004,
+        "l": 79.15,
+        "o": 79.5,
+        "pc": 78.23,
+        "t": 1776456000
+      }
+    },
+    {
+      "ticker": "LCID",
+      "profile": {
+        "country": "US",
+        "currency": "USD",
+        "estimateCurrency": "USD",
+        "exchange": "NASDAQ NMS - GLOBAL MARKET",
+        "finnhubIndustry": "Automobiles",
+        "ipo": "2020-07-29",
+        "logo": "https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/LCID.png",
+        "marketCapitalization": 2410.056355506493,
+        "name": "Lucid Group Inc",
+        "phone": "13026365400",
+        "shareOutstanding": 327.68,
+        "ticker": "LCID",
+        "weburl": "https://www.lucidmotors.com/"
+      },
+      "quote": {
+        "c": 7.31,
+        "d": -0.39,
+        "dp": -5.0649,
+        "h": 7.88,
+        "l": 7.23,
+        "o": 7.83,
+        "pc": 7.7,
+        "t": 1776456000
+      }
+    }
+  ],
+  "news": [
+    {
+      "headline": "I Asked ChatGPT How the Stock Market Would Look If We Ignored the 7 Biggest Stocks",
+      "source": "Yahoo",
+      "datetime": 1776533946,
+      "summary": "See how removing the Magnificent 7 could flatten S&P 500 returns, reshape 401(k) portfolios and change retirement growth for investors. Find out more now.",
+      "url": "https://finnhub.io/api/news?id=97bb4cfbec49d76df07a746c2e97adcb18645b2976090aff30c994723022911d",
+      "image": "https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png"
+    },
+    {
+      "headline": "How Will Dow Jones Futures, Oil Prices React As Iran, Hormuz News Turns?",
+      "source": "Yahoo",
+      "datetime": 1776533620,
+      "summary": "How will markets react as Iran says the Strait of Hormuz is still under its \"strict control\"? Tesla earnings loom.",
+      "url": "https://finnhub.io/api/news?id=02de50d2ee4bd7725057980dc306a31489fe364f9a60155533c6acf12d5ba754",
+      "image": "https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png"
+    },
+    {
+      "headline": "Wall Street firm drops shocking verdict ahead of Tesla earnings",
+      "source": "Yahoo",
+      "datetime": 1776532020,
+      "summary": "Tesla (TSLA) investors finally caught a break after a long time, thanks to one of the biggest Wall Streetfirms in the world. UBSis making a brave call, moving Tesla's stock rating from Sell to Hold just as the markets prepare for the upcoming earnings report. Market observers want to know whether ...",
+      "url": "https://finnhub.io/api/news?id=d1a7d3cf958e1fa851fe1c90f743b7ca32a5941db48a9ddec77903b7f15fd61d",
+      "image": "https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png"
+    },
+    {
+      "headline": "Tesla rolls out robotaxis in Dallas and Houston",
+      "source": "Finnhub",
+      "datetime": 1776524294,
+      "summary": "Tesla said on Saturday it is rolling out self-driving taxis in Texas cities of Dallas and Houston.Try Tesla Robotaxi in Dallas & Houston! CEO Elon Musk said in an X post....",
+      "url": "https://finnhub.io/api/news?id=e11eb71550134e307dbe68786e9749fb1c1178272cdf52fb0ddb100662a1f58e",
+      "image": ""
+    },
+    {
+      "headline": "Tesla: Robotaxi now rolling out in Dallas & Houston",
+      "source": "Finnhub",
+      "datetime": 1776523573,
+      "summary": "Tesla: Robotaxi now rolling out in Dallas & Houston...",
+      "url": "https://finnhub.io/api/news?id=09e1cab9a020cd1ba4e5ba14a2a3c876213901b663c718bd4a87f621c009bf20",
+      "image": ""
+    },
+    {
+      "headline": "Wall Street Rally Faces Key Test As Earnings, Geopolitics Drive Week Ahead",
+      "source": "Benzinga",
+      "datetime": 1776519980,
+      "summary": "A strong market rally faces its next test as a busy earnings week and ongoing geopolitical risks take center stage.",
+      "url": "https://finnhub.io/api/news?id=ccdae709ba4e2c85bdd8c64c578bb0525af75f8cd1be5746edd0c325f85a80c0",
+      "image": "https://cdn.benzinga.com/files/images/story/2026/04/18/Wall-Street-Sign-With-American-Flag-On-T.jpeg?width=2048&height=1536"
+    }
+  ]
+}
