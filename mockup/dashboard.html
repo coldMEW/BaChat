@@ -12,7 +12,22 @@
   <!-- Sidebar -->
   <aside class="sidebar">
     <div class="brand">Ba<span class="brand-mark">chat</span></div>
-    <div class="nav-section-label">Overview</div>
+
+    <div class="sidebar-actions">
+      <button class="sidebar-action-btn" onclick="alert('Mockup: would open Add income dialog.');">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        Add income
+      </button>
+      <button class="sidebar-action-btn" onclick="alert('Mockup: would open Add expense dialog.');">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        Add expense
+      </button>
+      <button class="sidebar-toggle" onclick="alert('Mockup: theme toggle. Light mode coming later.');">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        Light mode
+      </button>
+    </div>
+
     <a href="dashboard.html" class="nav-item">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
       Dashboard
@@ -21,8 +36,6 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
       Upload
     </a>
-
-    <div class="nav-section-label">Insight</div>
     <a href="dna.html" class="nav-item">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
       Spending DNA
@@ -39,181 +52,332 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>
       Invest
     </a>
-
-    <div class="nav-section-label">Reflection</div>
     <a href="check-in.html" class="nav-item">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
       Check-in
     </a>
-
-    <div class="spacer"></div>
-
     <a href="settings.html" class="nav-item">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1.08-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1.08 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
       Settings
     </a>
+
+    <div class="spacer"></div>
+
+    <button class="sidebar-logout" onclick="alert('Mockup: signs out.');">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+      Log out
+    </button>
   </aside>
 
   <!-- Main area -->
   <div class="main-area">
-    <header class="top-bar">
-      <div class="page-title">Dashboard</div>
-      <div class="top-actions">
-        <div class="segmented" data-label-target="#period-label">
-          <button>Week</button>
-          <button class="active">Biweek</button>
-          <button>Month</button>
+    <main class="content" style="padding-top: 2.5rem;">
+      <!-- Greeting -->
+      <div class="greeting-block">
+        <h1>Good morning, <span class="accent">Pratik!</span></h1>
+        <div class="sub">Here is your portfolio snapshot and saving progress.</div>
+      </div>
+
+      <!-- Dashboard grid: 2.1fr main + 1fr side -->
+      <div class="dashboard-grid">
+
+        <!-- === LEFT (main) === -->
+        <div class="dashboard-main">
+
+          <!-- Stat row: Balance, Salary, Savings -->
+          <div class="stat-row">
+            <div class="stat-card-v2">
+              <div class="top">
+                <div class="label-v2">Balance</div>
+                <div class="help-dot" title="Your current cash across tracked accounts.">?</div>
+              </div>
+              <div class="big-value">$3,396</div>
+              <div class="delta-jade">+13.4%</div>
+            </div>
+            <div class="stat-card-v2">
+              <div class="top">
+                <div class="label-v2">Income</div>
+                <div class="help-dot" title="Your monthly take-home pay.">?</div>
+              </div>
+              <div class="big-value">$5,000</div>
+              <div class="footnote">For this month</div>
+            </div>
+            <div class="stat-card-v2">
+              <div class="top">
+                <div class="label-v2">Saved</div>
+                <div class="help-dot" title="All-time total saved via Bachat.">?</div>
+              </div>
+              <div class="big-value">$4,660</div>
+              <div class="footnote">For all time</div>
+            </div>
+          </div>
+
+          <!-- Portfolio chart -->
+          <div class="chart-panel-v2">
+            <div class="chart-head">
+              <div>
+                <h3>Portfolio Gain / Loss</h3>
+                <div class="chart-meta-row">
+                  <span class="pill-violet">● Net performance</span>
+                  <span class="label-v2" style="margin: 0;">Past 30 days</span>
+                </div>
+              </div>
+              <div class="meta-right" style="text-align: right;">
+                <span class="label-v2">Total change</span>
+                <div class="total-change">+ $1,284</div>
+              </div>
+            </div>
+
+            <svg viewBox="0 0 760 260" preserveAspectRatio="none" aria-label="Portfolio gain/loss over 30 days" style="overflow: visible;">
+              <!-- Grid lines -->
+              <line x1="40" y1="40"  x2="760" y2="40"  stroke="var(--border)" stroke-dasharray="3,3" opacity="0.6"/>
+              <line x1="40" y1="85"  x2="760" y2="85"  stroke="var(--border)" stroke-dasharray="3,3" opacity="0.6"/>
+              <line x1="40" y1="130" x2="760" y2="130" stroke="var(--border)" stroke-dasharray="3,3" opacity="0.8"/>
+              <line x1="40" y1="175" x2="760" y2="175" stroke="var(--border)" stroke-dasharray="3,3" opacity="0.6"/>
+              <line x1="40" y1="220" x2="760" y2="220" stroke="var(--border)" stroke-dasharray="3,3" opacity="0.6"/>
+
+              <!-- Y labels -->
+              <text x="5"  y="43"  fill="var(--text-muted)" font-size="10" font-family="Geist Mono">+$2K</text>
+              <text x="5"  y="88"  fill="var(--text-muted)" font-size="10" font-family="Geist Mono">+$1K</text>
+              <text x="15" y="133" fill="var(--text-muted)" font-size="10" font-family="Geist Mono">$0</text>
+              <text x="10" y="178" fill="var(--text-muted)" font-size="10" font-family="Geist Mono">-$1K</text>
+              <text x="5"  y="223" fill="var(--text-muted)" font-size="10" font-family="Geist Mono">-$2K</text>
+
+              <!-- Area fill under curve -->
+              <defs>
+                <linearGradient id="perfGradient" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%"  stop-color="#8B5CF6" stop-opacity="0.5"/>
+                  <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+
+              <path d="M 40 170
+                       C 90 170, 130 155, 160 140
+                       C 200 120, 240 105, 280 85
+                       C 320 70, 360 78, 400 105
+                       C 440 140, 480 155, 520 120
+                       C 560 85, 600 70, 640 85
+                       C 680 100, 720 110, 760 95
+                       L 760 260 L 40 260 Z"
+                    fill="url(#perfGradient)" />
+
+              <!-- Main curve -->
+              <path d="M 40 170
+                       C 90 170, 130 155, 160 140
+                       C 200 120, 240 105, 280 85
+                       C 320 70, 360 78, 400 105
+                       C 440 140, 480 155, 520 120
+                       C 560 85, 600 70, 640 85
+                       C 680 100, 720 110, 760 95"
+                    fill="none" stroke="#8B5CF6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+
+              <!-- Tooltip point at day ~26 (Aug 26) -->
+              <circle cx="520" cy="120" r="6" fill="var(--bg-card)" stroke="#A78BFA" stroke-width="3"/>
+              <line x1="520" y1="126" x2="520" y2="240" stroke="#A78BFA" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+
+              <!-- Tooltip bubble -->
+              <g transform="translate(470, 80)">
+                <rect x="0" y="0" width="100" height="30" rx="15" fill="var(--bg-card-hover)" stroke="var(--border-active)" stroke-width="1"/>
+                <text x="50" y="20" fill="var(--text-primary)" font-family="Geist Mono" font-size="13" font-weight="600" text-anchor="middle">+$1,284</text>
+              </g>
+
+              <!-- X labels -->
+              <text x="40"  y="255" fill="var(--text-muted)" font-size="10" font-family="Geist Mono">07 Aug</text>
+              <text x="125" y="255" fill="var(--text-muted)" font-size="10" font-family="Geist Mono">10 Aug</text>
+              <text x="210" y="255" fill="var(--text-muted)" font-size="10" font-family="Geist Mono">13 Aug</text>
+              <text x="295" y="255" fill="var(--text-muted)" font-size="10" font-family="Geist Mono">16 Aug</text>
+              <text x="380" y="255" fill="var(--text-muted)" font-size="10" font-family="Geist Mono">20 Aug</text>
+              <text x="460" y="255" fill="var(--text-muted)" font-size="10" font-family="Geist Mono">23 Aug</text>
+              <text x="545" y="255" fill="var(--text-muted)" font-size="10" font-family="Geist Mono">26 Aug</text>
+              <text x="625" y="255" fill="var(--text-muted)" font-size="10" font-family="Geist Mono">29 Aug</text>
+              <text x="705" y="255" fill="var(--text-muted)" font-size="10" font-family="Geist Mono">05 Sep</text>
+            </svg>
+          </div>
+
+          <!-- Savings goals -->
+          <div class="goals-panel">
+            <div class="head">
+              <div>
+                <h3>Savings goals</h3>
+                <div class="sub">Track your target funds and progress</div>
+              </div>
+              <span class="active-count-pill">3 active</span>
+            </div>
+
+            <div class="goal-row">
+              <div class="goal-header-row">
+                <div>
+                  <div class="goal-title">Emergency fund</div>
+                  <div class="goal-sub">Target safety buffer</div>
+                </div>
+                <div class="goal-amount">$3,800<span class="total">/5,000</span></div>
+              </div>
+              <div class="goal-bar-wrap">
+                <div class="goal-bar violet" style="width: 76%;"></div>
+              </div>
+            </div>
+
+            <div class="goal-row">
+              <div class="goal-header-row">
+                <div>
+                  <div class="goal-title">New laptop</div>
+                  <div class="goal-sub">Work setup upgrade</div>
+                </div>
+                <div class="goal-amount">$600<span class="total">/1,400</span></div>
+              </div>
+              <div class="goal-bar-wrap">
+                <div class="goal-bar pink" style="width: 43%;"></div>
+              </div>
+            </div>
+
+            <div class="goal-row">
+              <div class="goal-header-row">
+                <div>
+                  <div class="goal-title">Vacation</div>
+                  <div class="goal-sub">Year-end travel plan</div>
+                </div>
+                <div class="goal-amount">$2,100<span class="total">/3,000</span></div>
+              </div>
+              <div class="goal-bar-wrap">
+                <div class="goal-bar cyan" style="width: 70%;"></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="avatar-chip">
-          <div class="avatar">P</div>
-          <span class="name">Pratik</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+
+        <!-- === RIGHT (side) === -->
+        <div class="dashboard-side">
+
+          <!-- Investments -->
+          <div class="investments-panel">
+            <div class="ip-head">
+              <h3>Investments</h3>
+              <a href="invest.html" class="view-all">View all</a>
+            </div>
+
+            <div class="invest-item">
+              <div class="invest-icon bg-pink">S</div>
+              <div>
+                <div class="invest-name">S&amp;P 500 ETF</div>
+                <div class="invest-sub">Long-term index holding</div>
+              </div>
+              <div class="invest-delta">+$324</div>
+            </div>
+
+            <div class="invest-item">
+              <div class="invest-icon bg-white">A</div>
+              <div>
+                <div class="invest-name">Apple Inc.</div>
+                <div class="invest-sub">Tech growth position</div>
+              </div>
+              <div class="invest-delta">+$186</div>
+            </div>
+
+            <div class="invest-item">
+              <div class="invest-icon bg-lime">N</div>
+              <div>
+                <div class="invest-name">NVIDIA</div>
+                <div class="invest-sub">AI semiconductor bet</div>
+              </div>
+              <div class="invest-delta">+$452</div>
+            </div>
+
+            <div class="invest-item">
+              <div class="invest-icon" style="background: #1A1A25; border: 1px solid var(--border-active); color: var(--text-primary);">T</div>
+              <div>
+                <div class="invest-name">Tesla</div>
+                <div class="invest-sub">High-volatility position</div>
+              </div>
+              <div class="invest-delta down">-$96</div>
+            </div>
+          </div>
+
+          <!-- Saving categories donut -->
+          <div class="donut-panel">
+            <div class="head">
+              <h3>Saving categories</h3>
+              <span class="period-badge">August 2026</span>
+            </div>
+
+            <div class="donut-wrap">
+              <svg viewBox="0 0 140 140" width="220" height="220">
+                <!-- Background track -->
+                <circle cx="70" cy="70" r="50" fill="none" stroke="var(--bg-elevated)" stroke-width="14" />
+
+                <!-- Segments (rotated -90 so start is at top) -->
+                <!-- circumference = 2*PI*50 ≈ 314.16 -->
+                <!-- Emergency 47.8% = 150.1 dash -->
+                <circle cx="70" cy="70" r="50" fill="none"
+                        stroke="#A3E635" stroke-width="14"
+                        stroke-dasharray="150.1 314.16"
+                        stroke-dashoffset="0"
+                        stroke-linecap="butt"
+                        transform="rotate(-90 70 70)" />
+
+                <!-- Vacation 27.4% = 86.1 dash, starts after emergency -->
+                <circle cx="70" cy="70" r="50" fill="none"
+                        stroke="#EC4899" stroke-width="14"
+                        stroke-dasharray="86.1 314.16"
+                        stroke-dashoffset="-150.1"
+                        stroke-linecap="butt"
+                        transform="rotate(-90 70 70)" />
+
+                <!-- Investments 12.7% = 39.9 dash -->
+                <circle cx="70" cy="70" r="50" fill="none"
+                        stroke="#22D3EE" stroke-width="14"
+                        stroke-dasharray="39.9 314.16"
+                        stroke-dashoffset="-236.2"
+                        stroke-linecap="butt"
+                        transform="rotate(-90 70 70)" />
+
+                <!-- Education 12.1% = 38 dash -->
+                <circle cx="70" cy="70" r="50" fill="none"
+                        stroke="#8B5CF6" stroke-width="14"
+                        stroke-dasharray="38 314.16"
+                        stroke-dashoffset="-276.1"
+                        stroke-linecap="butt"
+                        transform="rotate(-90 70 70)" />
+              </svg>
+
+              <div class="donut-center">
+                <div class="amount">$4,810</div>
+                <div class="caption">Saved this month</div>
+              </div>
+            </div>
+
+            <div class="donut-legend">
+              <div class="legend-item">
+                <span class="legend-dot lime"></span>
+                <div>
+                  <span class="legend-label">Emergency fund</span>
+                  <span class="legend-amount">$2,300</span>
+                </div>
+              </div>
+              <div class="legend-item">
+                <span class="legend-dot pink"></span>
+                <div>
+                  <span class="legend-label">Vacation</span>
+                  <span class="legend-amount">$1,320</span>
+                </div>
+              </div>
+              <div class="legend-item">
+                <span class="legend-dot cyan"></span>
+                <div>
+                  <span class="legend-label">Investments</span>
+                  <span class="legend-amount">$610</span>
+                </div>
+              </div>
+              <div class="legend-item">
+                <span class="legend-dot violet"></span>
+                <div>
+                  <span class="legend-label">Education</span>
+                  <span class="legend-amount">$580</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </header>
-
-    <main class="content">
-      <h1 class="page-heading">Your last 14 days</h1>
-      <p class="page-subtitle">63 transactions. 7 merchants. One pattern worth noticing.</p>
-
-      <!-- Stat cards -->
-      <section class="section">
-        <div class="grid-3">
-          <div class="stat-card primary">
-            <div class="label">Total spend</div>
-            <div class="value">$1,847.22</div>
-            <div class="delta down">▲ 12% vs last biweek</div>
-          </div>
-          <div class="stat-card">
-            <div class="label">Transactions</div>
-            <div class="value">47</div>
-            <div class="delta">3.4/day average</div>
-          </div>
-          <div class="stat-card">
-            <div class="label">Burn vs income</div>
-            <div class="value" style="color: var(--accent-danger);">78%</div>
-            <div class="delta down">Only 22% saved</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Chart -->
-      <section class="section">
-        <div class="chart-panel">
-          <h3>Spend over time</h3>
-          <p class="chart-subtitle">Showing <span id="period-label">biweek</span> buckets · dashed line is your income target</p>
-
-          <svg viewBox="0 0 800 240" preserveAspectRatio="none" aria-label="Time-series chart of spending vs income">
-            <!-- Grid lines -->
-            <line x1="0" y1="60"  x2="800" y2="60"  stroke="var(--border)" stroke-dasharray="2,4"/>
-            <line x1="0" y1="120" x2="800" y2="120" stroke="var(--border)" stroke-dasharray="2,4"/>
-            <line x1="0" y1="180" x2="800" y2="180" stroke="var(--border)" stroke-dasharray="2,4"/>
-
-            <!-- Income line (saffron, dashed) -->
-            <line x1="0" y1="90" x2="800" y2="90" stroke="#F59E0B" stroke-width="2" stroke-dasharray="6,4" />
-
-            <!-- Spend line (crimson) -->
-            <path d="M 0 140 L 80 125 L 160 110 L 240 150 L 320 90 L 400 80 L 480 120 L 560 70 L 640 100 L 720 50 L 800 65"
-                  fill="none" stroke="#EF4444" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
-
-            <!-- Area under spend -->
-            <path d="M 0 140 L 80 125 L 160 110 L 240 150 L 320 90 L 400 80 L 480 120 L 560 70 L 640 100 L 720 50 L 800 65 L 800 240 L 0 240 Z"
-                  fill="url(#spendGradient)" opacity="0.25" />
-
-            <defs>
-              <linearGradient id="spendGradient" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#EF4444" stop-opacity="0.6" />
-                <stop offset="100%" stop-color="#EF4444" stop-opacity="0" />
-              </linearGradient>
-            </defs>
-
-            <!-- X labels -->
-            <text x="40"  y="232" fill="var(--text-muted)" font-size="11" font-family="Geist Mono">W1</text>
-            <text x="200" y="232" fill="var(--text-muted)" font-size="11" font-family="Geist Mono">W2</text>
-            <text x="360" y="232" fill="var(--text-muted)" font-size="11" font-family="Geist Mono">W3</text>
-            <text x="520" y="232" fill="var(--text-muted)" font-size="11" font-family="Geist Mono">W4</text>
-            <text x="680" y="232" fill="var(--text-muted)" font-size="11" font-family="Geist Mono">W5</text>
-          </svg>
-
-          <div class="chart-legend">
-            <div class="item"><span class="dot" style="background: #F59E0B;"></span>Income target</div>
-            <div class="item"><span class="dot" style="background: #EF4444;"></span>Actual spend</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Transactions -->
-      <section class="section">
-        <div class="section-label">
-          <span>Recent transactions</span>
-          <a href="#" class="text-saffron" style="text-transform: none; letter-spacing: 0; font-weight: 500;" onclick="event.preventDefault(); alert('Mockup: opens full list.');">View all →</a>
-        </div>
-        <div class="txn-list">
-          <div class="txn-row">
-            <div class="txn-date">Apr 17</div>
-            <div>
-              <div class="txn-merchant">DoorDash</div>
-              <div class="txn-category">food_dining · 10:42 PM</div>
-            </div>
-            <div class="pill pill-crimson">food_dining</div>
-            <div class="txn-amount">-$32.50</div>
-          </div>
-          <div class="txn-row">
-            <div class="txn-date">Apr 17</div>
-            <div>
-              <div class="txn-merchant">Amazon</div>
-              <div class="txn-category">shopping · 11:14 PM</div>
-            </div>
-            <div class="pill pill-muted">shopping</div>
-            <div class="txn-amount">-$89.00</div>
-          </div>
-          <div class="txn-row">
-            <div class="txn-date">Apr 16</div>
-            <div>
-              <div class="txn-merchant">Uber</div>
-              <div class="txn-category">transport · 8:20 AM</div>
-            </div>
-            <div class="pill pill-muted">transport</div>
-            <div class="txn-amount">-$14.20</div>
-          </div>
-          <div class="txn-row">
-            <div class="txn-date">Apr 16</div>
-            <div>
-              <div class="txn-merchant">Starbucks</div>
-              <div class="txn-category">food_dining · 7:48 AM</div>
-            </div>
-            <div class="pill pill-crimson">food_dining</div>
-            <div class="txn-amount">-$6.75</div>
-          </div>
-          <div class="txn-row">
-            <div class="txn-date">Apr 15</div>
-            <div>
-              <div class="txn-merchant">Netflix</div>
-              <div class="txn-category">subscriptions · 3:02 AM</div>
-            </div>
-            <div class="pill pill-muted">subscriptions</div>
-            <div class="txn-amount">-$15.99</div>
-          </div>
-          <div class="txn-row">
-            <div class="txn-date">Apr 14</div>
-            <div>
-              <div class="txn-merchant">Whole Foods</div>
-              <div class="txn-category">groceries · 6:15 PM</div>
-            </div>
-            <div class="pill pill-muted">groceries</div>
-            <div class="txn-amount">-$74.12</div>
-          </div>
-          <div class="txn-row">
-            <div class="txn-date">Apr 14</div>
-            <div>
-              <div class="txn-merchant">DoorDash</div>
-              <div class="txn-category">food_dining · 10:08 PM</div>
-            </div>
-            <div class="pill pill-crimson">food_dining</div>
-            <div class="txn-amount">-$28.70</div>
-          </div>
-        </div>
-      </section>
     </main>
   </div>
 </div>
