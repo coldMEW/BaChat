@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Predict · Bachat</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand">Ba<span class="brand-mark">chat</span></div>
+    <div class="nav-section-label">Overview</div>
+    <a href="dashboard.html" class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Dashboard</a>
+    <a href="upload.html" class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>Upload</a>
+    <div class="nav-section-label">Insight</div>
+    <a href="dna.html" class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Spending DNA</a>
+    <a href="predict.html" class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Predict</a>
+    <a href="simulate.html" class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="14 7 21 7 21 14"/></svg>Simulate</a>
+    <a href="invest.html" class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>Invest</a>
+    <div class="nav-section-label">Reflection</div>
+    <a href="check-in.html" class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>Check-in</a>
+    <div class="spacer"></div>
+    <a href="settings.html" class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v6M12 17v6M4.2 4.2l4.3 4.3M15.5 15.5l4.3 4.3M1 12h6M17 12h6M4.2 19.8l4.3-4.3M15.5 8.5l4.3-4.3"/></svg>Settings</a>
+  </aside>
+
+  <div class="main-area">
+    <header class="top-bar">
+      <div class="page-title">Predict</div>
+      <div class="top-actions">
+        <div class="avatar-chip">
+          <div class="avatar">P</div>
+          <span class="name">Pratik</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <h1 class="page-heading">Will you regret this?</h1>
+      <p class="page-subtitle">Before you buy, check your pattern. We'll tell you the honest odds — calibrated to your past behavior, not generic advice.</p>
+
+      <div class="predict-layout">
+        <!-- Form -->
+        <section>
+          <div class="card">
+            <h3 class="font-display" style="font-size: 1.2rem; margin-bottom: 0.25rem;">What are you about to buy?</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">The more specific, the better the prediction.</p>
+
+            <form data-mock-message="Mockup: would call /api/regret-predict.">
+              <div class="field">
+                <label for="merchant">Merchant</label>
+                <input type="text" id="merchant" value="DoorDash" />
+              </div>
+
+              <div class="field">
+                <label for="category">Category</label>
+                <select id="category">
+                  <option>food_dining</option>
+                  <option>shopping</option>
+                  <option>transport</option>
+                  <option>entertainment</option>
+                  <option>subscriptions</option>
+                  <option>other</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="amount">Amount</label>
+                <input type="text" id="amount" value="$35.00" />
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-lg" style="margin-top: 0.5rem;">Check regret score</button>
+            </form>
+
+            <p style="margin-top: 1.5rem; font-size: 0.8rem; color: var(--text-muted); text-align: center;">
+              Takes about 3 seconds. The pause is the product.
+            </p>
+          </div>
+        </section>
+
+        <!-- Score -->
+        <section>
+          <div class="regret-score-card">
+            <div class="score-ring-wrap">
+              <div class="score-ring">
+                <svg width="180" height="180" viewBox="0 0 180 180">
+                  <!-- Background ring -->
+                  <circle cx="90" cy="90" r="75" fill="none" stroke="var(--border)" stroke-width="12" />
+                  <!-- Progress (74/100 - crimson) -->
+                  <circle cx="90" cy="90" r="75" fill="none"
+                          stroke="#EF4444" stroke-width="12"
+                          stroke-linecap="round"
+                          stroke-dasharray="471.24"
+                          stroke-dashoffset="122.52" />
+                </svg>
+                <div class="score-value">74</div>
+              </div>
+            </div>
+            <div class="score-label">Regret probability</div>
+
+            <div class="verdict-badge">High regret risk</div>
+
+            <div class="reasoning-list">
+              <div class="reasoning-item">
+                <div class="label">Similar past</div>
+                <div class="content">7 DoorDash orders in 30 days · 5 at 9 PM or later</div>
+              </div>
+              <div class="reasoning-item">
+                <div class="label">Pattern match</div>
+                <div class="content">This activates your <strong>Night Owl Splurger</strong> archetype and your <strong>Ego Depletion</strong> pattern — late-evening impulse window.</div>
+              </div>
+              <div class="reasoning-item">
+                <div class="label">Loss frame</div>
+                <div class="content">$35 = 1.8 hours of your work time. At this frequency, this category drains ~$3,360/year.</div>
+              </div>
+              <div class="reasoning-item">
+                <div class="label">Alternatives</div>
+                <div class="content">Frozen meal you already own · 15-min pasta · batch soup from Sunday</div>
+              </div>
+              <div class="reasoning-item">
+                <div class="label">Cooling off</div>
+                <div class="content">Set a 20-minute timer. If you're still hungry after, order — but from a $15 option, not $35.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="mock.js"></script>
+</body>
+</html>

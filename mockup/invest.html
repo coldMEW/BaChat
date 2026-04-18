@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invest · Bachat</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand">Ba<span class="brand-mark">chat</span></div>
+    <div class="nav-section-label">Overview</div>
+    <a href="dashboard.html" class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Dashboard</a>
+    <a href="upload.html" class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>Upload</a>
+    <div class="nav-section-label">Insight</div>
+    <a href="dna.html" class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Spending DNA</a>
+    <a href="predict.html" class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Predict</a>
+    <a href="simulate.html" class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="14 7 21 7 21 14"/></svg>Simulate</a>
+    <a href="invest.html" class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>Invest</a>
+    <div class="nav-section-label">Reflection</div>
+    <a href="check-in.html" class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>Check-in</a>
+    <div class="spacer"></div>
+    <a href="settings.html" class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v6M12 17v6M4.2 4.2l4.3 4.3M15.5 15.5l4.3 4.3M1 12h6M17 12h6M4.2 19.8l4.3-4.3M15.5 8.5l4.3-4.3"/></svg>Settings</a>
+  </aside>
+
+  <div class="main-area">
+    <header class="top-bar">
+      <div class="page-title">Investment Review</div>
+      <div class="top-actions">
+        <button class="btn btn-primary" onclick="alert('Mockup: opens add-holding form.');">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          Add holding
+        </button>
+        <div class="avatar-chip">
+          <div class="avatar">P</div>
+          <span class="name">Pratik</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <h1 class="page-heading">What actually drove your returns</h1>
+      <p class="page-subtitle">No price predictions. No buy/sell calls. Just honest retrospective analysis of why your holdings moved.</p>
+
+      <!-- Portfolio summary stats -->
+      <section class="section">
+        <div class="grid-4">
+          <div class="stat-card">
+            <div class="label">Total value</div>
+            <div class="value">$8,430</div>
+          </div>
+          <div class="stat-card primary">
+            <div class="label">90-day change</div>
+            <div class="value" style="color: var(--accent-success);">+18.2%</div>
+            <div class="delta up">+$1,296</div>
+          </div>
+          <div class="stat-card">
+            <div class="label">Best performer</div>
+            <div class="value" style="font-size: 1.4rem;">NVDA</div>
+            <div class="delta up">+53%</div>
+          </div>
+          <div class="stat-card">
+            <div class="label">Worst performer</div>
+            <div class="value" style="font-size: 1.4rem;">SOXL</div>
+            <div class="delta down">-37%</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio chart -->
+      <section class="section">
+        <div class="chart-panel">
+          <h3>Portfolio performance — last 90 days</h3>
+          <p class="chart-subtitle">% change from start, by holding</p>
+
+          <svg viewBox="0 0 800 240" preserveAspectRatio="none">
+            <line x1="0" y1="60"  x2="800" y2="60"  stroke="var(--border)" stroke-dasharray="2,4"/>
+            <line x1="0" y1="120" x2="800" y2="120" stroke="var(--border)" stroke-dasharray="2,4" opacity="0.7"/>
+            <line x1="0" y1="180" x2="800" y2="180" stroke="var(--border)" stroke-dasharray="2,4"/>
+            <text x="5" y="124" fill="var(--text-muted)" font-size="10" font-family="Geist Mono">0%</text>
+            <text x="5" y="64"  fill="var(--text-muted)" font-size="10" font-family="Geist Mono">+50%</text>
+            <text x="5" y="184" fill="var(--text-muted)" font-size="10" font-family="Geist Mono">-50%</text>
+
+            <!-- NVDA (saffron, upward) -->
+            <path d="M 0 120 L 100 110 L 200 95 L 300 85 L 400 80 L 500 70 L 600 68 L 700 62 L 800 60"
+                  fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+            <text x="760" y="55" fill="#F59E0B" font-size="11" font-family="Geist" font-weight="600">NVDA</text>
+
+            <!-- AAPL (info blue, slight up) -->
+            <path d="M 0 120 L 100 122 L 200 115 L 300 118 L 400 112 L 500 108 L 600 110 L 700 106 L 800 108"
+                  fill="none" stroke="#60A5FA" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+            <text x="760" y="104" fill="#60A5FA" font-size="11" font-family="Geist" font-weight="600">AAPL</text>
+
+            <!-- SOXL (crimson, downward) -->
+            <path d="M 0 120 L 100 135 L 200 150 L 300 145 L 400 160 L 500 175 L 600 185 L 700 195 L 800 190"
+                  fill="none" stroke="#EF4444" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+            <text x="760" y="186" fill="#EF4444" font-size="11" font-family="Geist" font-weight="600">SOXL</text>
+
+            <!-- Baseline marker -->
+            <circle cx="0" cy="120" r="3" fill="var(--text-muted)" />
+            <text x="8" y="136" fill="var(--text-muted)" font-size="9" font-family="Geist Mono">start</text>
+          </svg>
+
+          <div class="chart-legend">
+            <div class="item"><span class="dot" style="background: #F59E0B;"></span>NVDA (+53%)</div>
+            <div class="item"><span class="dot" style="background: #60A5FA;"></span>AAPL (+9%)</div>
+            <div class="item"><span class="dot" style="background: #EF4444;"></span>SOXL (-37%)</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Holdings -->
+      <section class="section">
+        <div class="section-label"><span>Holdings · 3 positions</span></div>
+
+        <div class="holding-card">
+          <div class="holding-ticker">NVDA</div>
+          <div>
+            <div style="color: var(--text-primary); font-weight: 500;">NVIDIA Corp.</div>
+            <div class="holding-meta"><span class="font-mono">10 sh</span> · cost basis <span class="font-mono">$400</span></div>
+          </div>
+          <div class="holding-value">$6,120</div>
+          <div class="holding-delta up">+53% ↑<br /><span style="font-size: 0.75rem; opacity: 0.8;">+$2,120</span></div>
+          <button class="btn btn-secondary" data-modal-open="explain-nvda" style="padding: 0.5rem 1rem;">Explain</button>
+        </div>
+
+        <div class="holding-card">
+          <div class="holding-ticker">AAPL</div>
+          <div>
+            <div style="color: var(--text-primary); font-weight: 500;">Apple Inc.</div>
+            <div class="holding-meta"><span class="font-mono">25 sh</span> · cost basis <span class="font-mono">$170</span></div>
+          </div>
+          <div class="holding-value">$4,625</div>
+          <div class="holding-delta up">+9% ↑<br /><span style="font-size: 0.75rem; opacity: 0.8;">+$375</span></div>
+          <button class="btn btn-secondary" data-modal-open="explain-aapl" style="padding: 0.5rem 1rem;">Explain</button>
+        </div>
+
+        <div class="holding-card">
+          <div class="holding-ticker">SOXL</div>
+          <div>
+            <div style="color: var(--text-primary); font-weight: 500;">Direxion Semi Bull 3×</div>
+            <div class="holding-meta"><span class="font-mono">5 sh</span> · cost basis <span class="font-mono">$35</span></div>
+          </div>
+          <div class="holding-value">$110</div>
+          <div class="holding-delta down">-37% ↓<br /><span style="font-size: 0.75rem; opacity: 0.8;">-$65</span></div>
+          <button class="btn btn-secondary" data-modal-open="explain-soxl" style="padding: 0.5rem 1rem;">Explain</button>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<!-- SOXL Explain Modal -->
+<div class="modal-backdrop" id="explain-soxl">
+  <div class="modal">
+    <button class="modal-close" data-modal-close>✕</button>
+    <h2>Why SOXL fell 37% over 90 days</h2>
+
+    <div class="modal-section">
+      <div class="modal-section-label">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent-success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        Verified events
+      </div>
+      <div class="driver-item">
+        <div class="date">Feb 12</div>
+        <div class="desc">NVDA earnings guidance disappointed; entire semi sector re-rated lower</div>
+        <div class="pct">~18%</div>
+      </div>
+      <div class="driver-item">
+        <div class="date">Mar 04</div>
+        <div class="desc">Fed signalled extended pause; growth stocks sold off broadly</div>
+        <div class="pct">~10%</div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <div class="modal-section-label" style="color: var(--text-muted);">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        Pattern-matching inference (speculation)
+      </div>
+      <div class="driver-item">
+        <div class="date">—</div>
+        <div class="desc" style="color: var(--text-secondary);">Broad AI-infrastructure sell-off; plausible but not individually verifiable</div>
+        <div class="pct">~9%</div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <div class="modal-section-label">Honest verdict</div>
+      <p style="color: var(--text-primary); line-height: 1.6;">
+        SOXL is a 3× leveraged semiconductor ETF; leverage amplifies both directions. This loss reflects known events plus a sector rotation — nothing unusual given the ETF's structure. If you held it expecting steady growth, that's the real lesson here.
+      </p>
+    </div>
+
+    <div class="modal-disclaimer">
+      This analysis does not predict future prices and is not investment advice.
+    </div>
+  </div>
+</div>
+
+<!-- NVDA Explain Modal -->
+<div class="modal-backdrop" id="explain-nvda">
+  <div class="modal">
+    <button class="modal-close" data-modal-close>✕</button>
+    <h2>Why NVDA rose 53% over 90 days</h2>
+
+    <div class="modal-section">
+      <div class="modal-section-label">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent-success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        Verified events
+      </div>
+      <div class="driver-item">
+        <div class="date">Jan 24</div>
+        <div class="desc">Data-center revenue guidance raised; supply constraints partially eased</div>
+        <div class="pct">~22%</div>
+      </div>
+      <div class="driver-item">
+        <div class="date">Mar 18</div>
+        <div class="desc">New GPU generation announced at developer conference; margin expansion signalled</div>
+        <div class="pct">~17%</div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <div class="modal-section-label" style="color: var(--text-muted);">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        Pattern-matching inference (speculation)
+      </div>
+      <div class="driver-item">
+        <div class="date">—</div>
+        <div class="desc" style="color: var(--text-secondary);">Continued AI-infrastructure capex narrative lifted the sector</div>
+        <div class="pct">~14%</div>
+      </div>
+    </div>
+
+    <div class="modal-disclaimer">
+      This analysis does not predict future prices and is not investment advice.
+    </div>
+  </div>
+</div>
+
+<!-- AAPL Explain Modal -->
+<div class="modal-backdrop" id="explain-aapl">
+  <div class="modal">
+    <button class="modal-close" data-modal-close>✕</button>
+    <h2>Why AAPL rose 9% over 90 days</h2>
+
+    <div class="modal-section">
+      <div class="modal-section-label">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent-success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        Verified events
+      </div>
+      <div class="driver-item">
+        <div class="date">Feb 01</div>
+        <div class="desc">Services revenue hit all-time high; buyback program extended</div>
+        <div class="pct">~6%</div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <div class="modal-section-label" style="color: var(--text-muted);">Pattern-matching inference (speculation)</div>
+      <div class="driver-item">
+        <div class="date">—</div>
+        <div class="desc" style="color: var(--text-secondary);">Flight to quality amid broader market volatility</div>
+        <div class="pct">~3%</div>
+      </div>
+    </div>
+
+    <div class="modal-disclaimer">
+      This analysis does not predict future prices and is not investment advice.
+    </div>
+  </div>
+</div>
+
+<script src="mock.js"></script>
+</body>
+</html>
