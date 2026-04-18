@@ -240,9 +240,14 @@
   }
 
   function makeNode({ cx, cy, isCenter, ticker, meta, allCaps, classMod }) {
+    // Outer wrapper holds the translate (SVG attribute, untouched by CSS).
+    const wrap = document.createElementNS(SVG_NS, 'g');
+    wrap.setAttribute('transform', `translate(${cx}, ${cy})`);
+
+    // Inner group holds the CSS scale/opacity animation so it cannot
+    // overwrite the outer translate.
     const g = document.createElementNS(SVG_NS, 'g');
     g.setAttribute('class', 'graph-node-group ' + classMod);
-    g.setAttribute('transform', `translate(${cx}, ${cy})`);
     g.dataset.ticker = ticker;
 
     const dp = meta.quote?.dp ?? null;
@@ -251,7 +256,6 @@
                    : (dp > 0 ? 'nodeGradUp' : 'nodeGradDown');
     const stroke = strokeFor(dp);
 
-    // Outer ring
     const ring = document.createElementNS(SVG_NS, 'circle');
     ring.setAttribute('cx', 0); ring.setAttribute('cy', 0);
     ring.setAttribute('r', r + 3);
@@ -261,7 +265,6 @@
     ring.setAttribute('stroke-opacity', isCenter ? 0.7 : 0.45);
     g.appendChild(ring);
 
-    // Main filled circle
     const circle = document.createElementNS(SVG_NS, 'circle');
     circle.setAttribute('cx', 0); circle.setAttribute('cy', 0);
     circle.setAttribute('r', r);
@@ -272,7 +275,6 @@
     if (isCenter) circle.setAttribute('filter', 'url(#centerGlow)');
     g.appendChild(circle);
 
-    // Highlight arc (top-left inner)
     const hl = document.createElementNS(SVG_NS, 'circle');
     hl.setAttribute('cx', -r * 0.35);
     hl.setAttribute('cy', -r * 0.35);
@@ -281,18 +283,14 @@
     hl.setAttribute('pointer-events', 'none');
     g.appendChild(hl);
 
-    // Ticker label
     const label = document.createElementNS(SVG_NS, 'text');
     label.setAttribute('class', 'graph-node-label');
     label.setAttribute('x', 0);
     label.setAttribute('y', dp != null && Math.abs(dp) >= 0.1 ? -6 : 0);
     label.textContent = ticker;
-    if (isCenter) {
-      label.setAttribute('font-size', '16');
-    }
+    if (isCenter) label.setAttribute('font-size', '16');
     g.appendChild(label);
 
-    // % sub-label
     if (dp != null && Math.abs(dp) >= 0.1) {
       const sub = document.createElementNS(SVG_NS, 'text');
       sub.setAttribute('class', 'graph-node-sublabel');
@@ -305,13 +303,13 @@
     }
 
     g._meta = meta;
-
     g.addEventListener('mouseenter', () => showTooltip(g));
     g.addEventListener('mousemove',  (e) => moveTooltip(e));
     g.addEventListener('mouseleave', () => hideTooltip());
     g.addEventListener('click', () => openSidePanel(g._meta));
 
-    return g;
+    wrap.appendChild(g);
+    return wrap;
   }
 
   /* ---------- tooltip ---------- */
