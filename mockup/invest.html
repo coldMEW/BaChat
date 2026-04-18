@@ -188,13 +188,32 @@
 
           <div class="graph-layout">
             <div class="graph-canvas-wrap">
-              <div data-graph-wrap style="width: 100%; height: 100%;"></div>
+              <div data-graph-wrap style="width: 100%; height: 560px;"></div>
               <div class="graph-tooltip" data-graph-tooltip>
                 <span class="tt-ticker">—</span>
                 <span class="tt-name">—</span>
                 <span class="tt-change">—</span>
               </div>
               <div class="graph-info-chip" data-graph-info>Loading...</div>
+              <div class="graph-legend">
+                <div class="legend-title">Reading the graph</div>
+                <div class="lgd-row">
+                  <div class="dotsize">
+                    <span style="width:4px;height:4px;"></span>
+                    <span style="width:7px;height:7px;"></span>
+                    <span style="width:11px;height:11px;"></span>
+                  </div>
+                  <span>Size = market cap</span>
+                </div>
+                <div class="lgd-row">
+                  <span class="swatch up"></span>
+                  <span>Up today</span>
+                </div>
+                <div class="lgd-row">
+                  <span class="swatch down"></span>
+                  <span>Down today</span>
+                </div>
+              </div>
             </div>
 
             <aside class="graph-side" data-graph-side>
@@ -335,6 +354,7 @@
 
 <script src="mock.js"></script>
 <script src="data.js"></script>
+<script src="summaries.js"></script>
 <script src="graph.js"></script>
 </body>
 </html>
