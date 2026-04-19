@@ -239,3 +239,184 @@ export interface ApiEnvelope<T> {
   cached: boolean
   fetchedAt: number
 }
+
+// ================================================================
+// Dashboard (behavioral finance)
+// ================================================================
+
+// ---------------- Transactions ----------------
+
+/** Coarse category; drives discretionary weighting for impulse. */
+export type TxCategory =
+  | 'groceries' | 'restaurants' | 'coffee' | 'delivery'
+  | 'ride-share' | 'gas' | 'transit' | 'transport-other'
+  | 'utilities' | 'rent' | 'insurance' | 'healthcare'
+  | 'subscriptions' | 'entertainment' | 'fitness'
+  | 'fashion' | 'electronics' | 'home' | 'hobbies'
+  | 'travel' | 'education' | 'gifts' | 'charity'
+  | 'fees' | 'transfer' | 'income' | 'uncategorized'
+
+export type SeedOrigin = 'seed' | 'upload'
+
+export interface Transaction {
+  id?: number
+  userId: string
+  date: string                // ISO yyyy-mm-dd (local)
+  timestamp: number           // ms epoch (includes hour-of-day for impulse)
+  amount: number              // USD, positive = debit (money out)
+  merchant: string            // normalized merchant name
+  description: string         // raw description as seen on statement / receipt
+  category: TxCategory
+  discretionaryWeight: number // 0..1 (looked up from category)
+  seedOrigin: SeedOrigin
+  pendingReview?: boolean     // true if OCR confidence was below threshold
+  createdAt: number
+}
+
+// ---------------- Accounts ----------------
+
+export interface Account {
+  userId: string
+  creditScore: number         // 300..850
+  creditLimit: number         // USD
+  currentBalance: number      // USD on the credit card
+  monthlyPaymentPct: number   // % of balance paid each month (default 3)
+  savings: number             // USD total savings
+  debt: number                // USD total debt (excl. credit card)
+  configuredAt: number
+}
+
+// ---------------- Impulse ----------------
+
+export type ImpulseDriverFamily =
+  | 'amount' | 'timing' | 'burst' | 'category' | 'payday'
+
+export interface ImpulseDriver {
+  family: ImpulseDriverFamily
+  label: string               // "Late-night spend (3 tx, 23:00–02:00)"
+  contribution: number        // signed points toward headline score
+  dataSource: string          // "Dexie · transactions · rolling-30d"
+  asOf: string                // ISO timestamp
+}
+
+export interface TxImpulseScore {
+  txId: number
+  impulse: number             // 0..1 sigmoid output
+  parts: {
+    zScore: number
+    lateNight: number
+    burst: number
+    discretionary: number
+    postPayday: number
+  }
+}
+
+export interface ImpulseAnalysis {
+  headline: number            // 0..100, higher = worse
+  burnt30d: number            // USD "could have been saved"
+  drivers: ImpulseDriver[]
+  perTx: Record<number, TxImpulseScore>
+  topTxId: number | null      // roast subject
+  asOf: string
+}
+
+// ---------------- Credit projection ----------------
+
+export interface CreditProjectionHorizon {
+  days: number
+  projectedBalance: number
+  projectedUtilization: number
+  projectedScore: number
+  delta: number               // projected - current (always ≤ 0)
+  utilizationImpact: number
+  onTrack: boolean            // true when utilization_impact >= 0
+}
+
+export interface CreditProjection {
+  currentScore: number
+  currentUtilization: number
+  dailyBurn: number
+  horizons: CreditProjectionHorizon[]
+  disclaimer: string
+  asOf: string
+}
+
+// ---------------- Roast ----------------
+
+export type RoastTone = 'savage' | 'dry' | 'supportive'
+
+export interface RoastPayload {
+  tone: RoastTone
+  roast: string
+  redirectSuggestion: string
+  redirectSymbol: string | null     // e.g. "VTI"
+  redirectAmount: number | null     // USD
+  subjectTxId: number | null
+  asOf: string
+}
+
+// ---------------- Heatmap ----------------
+
+export interface HeatmapCell {
+  date: string                // ISO yyyy-mm-dd
+  label: string               // "Mon", "Tue", …
+  totalSpend: number
+  impulseSpend: number
+  level: 0 | 1 | 2 | 3 | 4 | 5 | 6  // 0 = empty, 6 = worst
+  topTx: Array<{ merchant: string; amount: number; category: TxCategory }>
+}
+
+// ---------------- Cashflow chart ----------------
+
+export interface CashflowPoint {
+  date: string                // ISO
+  netFlow: number             // negative = spending day
+  cumulative: number          // running cumulative from start of range
+}
+
+export interface CashflowSeries {
+  range: 'today' | '7d' | '30d' | 'year'
+  points: CashflowPoint[]
+  totalChange: number
+  totalChangePct: number
+  bestDay: CashflowPoint | null
+  worstDay: CashflowPoint | null
+}
+
+// ---------------- Dashboard payload (server → client) ----------------
+
+export interface DashboardPayload {
+  impulse: ImpulseAnalysis
+  creditProjection: CreditProjection | null   // null until AccountsSetupModal runs
+  heatmap: HeatmapCell[]
+  cashflow: CashflowSeries
+  roast: RoastPayload | null
+  generatedAt: string
+}
+
+// ---------------- Vision usage log ----------------
+
+export interface VisionUsageRow {
+  userId: string
+  date: string                // ISO yyyy-mm-dd
+  count: number
+}
+
+// ---------------- Parsed-upload preview ----------------
+
+export interface ParsedTransactionPreview {
+  date: string
+  amount: number
+  merchant: string
+  description: string
+  confidence: number          // 0..1, lowest of the extracted fields
+  needsReview: boolean
+}
+
+export type ExtractKind = 'csv' | 'pdf' | 'image'
+
+export interface ExtractResult {
+  kind: ExtractKind
+  transactions: ParsedTransactionPreview[]
+  warnings: string[]
+}

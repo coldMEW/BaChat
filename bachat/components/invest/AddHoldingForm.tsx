@@ -15,10 +15,16 @@ function inferAssetType(sym: string): AssetType {
 
 export function AddHoldingForm({
   onAdd,
+  initialSymbol = '',
+  hintAmount,
 }: {
   onAdd: (h: Omit<Holding, 'id'>) => Promise<void> | void
+  /** Pre-fill the symbol field (used by the dashboard → invest redirect bridge). */
+  initialSymbol?: string
+  /** Optional dollar-amount hint shown as helper text (from the roast redirect). */
+  hintAmount?: number
 }) {
-  const [symbol, setSymbol] = useState('')
+  const [symbol, setSymbol] = useState(initialSymbol)
   const [shares, setShares] = useState('')
   const [costBasis, setCostBasis] = useState('')
   const [submitting, setSubmitting] = useState(false)
@@ -86,6 +92,11 @@ export function AddHoldingForm({
       <button type="submit" disabled={submitting} className="btn-primary disabled:opacity-50">
         {submitting ? 'Adding…' : '+ Add holding'}
       </button>
+      {hintAmount !== undefined && hintAmount > 0 && (
+        <div className="w-full text-[11px]" style={{ color: 'var(--text-muted)' }}>
+          Dashboard suggestion: redirect ${hintAmount.toFixed(0)} into this position.
+        </div>
+      )}
     </form>
   )
 }

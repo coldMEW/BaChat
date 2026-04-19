@@ -50,3 +50,4 @@ if (!buckets.has('finnhub'))       createBucket('finnhub', 60, 55)     // 55/min
 if (!buckets.has('coingecko'))     createBucket('coingecko', 30, 25)   // 25/min (with demo key)
 if (!buckets.has('fred'))          createBucket('fred', 100, 100)      // effectively unmetered
 if (!buckets.has('anthropic'))     createBucket('anthropic', 50, 50)   // generous
+if (!buckets.has('anthropic-vision')) createBucket('anthropic-vision', 10, 8) // conservative for Vision

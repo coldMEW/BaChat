@@ -44,7 +44,7 @@ const ICONS = {
 
 export function Sidebar({ active }: { active: string }) {
   const items: Array<{ key: string; icon: React.ReactNode; label: string; href: string }> = [
-    { key: 'dashboard', icon: ICONS.dashboard, label: 'Dashboard', href: '/' },
+    { key: 'dashboard', icon: ICONS.dashboard, label: 'Dashboard', href: '/dashboard' },
     { key: 'invest', icon: ICONS.invest, label: 'Invest', href: '/invest' },
     { key: 'upload', icon: ICONS.upload, label: 'Upload', href: '/' },
     { key: 'dna', icon: ICONS.dna, label: 'Spending DNA', href: '/' },

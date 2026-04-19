@@ -6,12 +6,16 @@
 
 import Dexie, { type Table } from 'dexie'
 import type {
+  Account,
   AnalystData,
+  DashboardPayload,
   DirectionalPrediction,
   DiversificationAnalysis,
   Holding,
   NewsCache,
   PriceHistory,
+  Transaction,
+  VisionUsageRow,
 } from '@/types'
 
 export interface PredictionCacheRow {
@@ -44,13 +48,27 @@ export interface NewsCacheRow extends NewsCache {
   userId: string
 }
 
+export interface DashboardCacheRow {
+  key: string               // `${userId}:${hash}`
+  userId: string
+  payload: DashboardPayload
+  fetchedAt: number
+  ttlMs: number
+}
+
 class BachatDB extends Dexie {
+  // v1
   holdings!: Table<Holding, number>
   priceCache!: Table<PriceCacheRow, string>
   newsCache!: Table<NewsCacheRow, [string, string]>
   analystCache!: Table<AnalystCacheRow, [string, string]>
   predictionCache!: Table<PredictionCacheRow, string>
   portfolioAnalysisCache!: Table<PortfolioAnalysisRow, [string, string]>
+  // v2 — dashboard
+  transactions!: Table<Transaction, number>
+  accounts!: Table<Account, string>
+  dashboardCache!: Table<DashboardCacheRow, string>
+  visionUsageLog!: Table<VisionUsageRow, [string, string]>
 
   constructor() {
     super('bachat')
@@ -61,6 +79,19 @@ class BachatDB extends Dexie {
       analystCache: '[userId+symbol], fetchedAt',
       predictionCache: 'key, userId, fetchedAt',
       portfolioAnalysisCache: '[userId+portfolioHash], fetchedAt',
+    })
+    // v2: additive — existing stores repeated (Dexie requires full schema per version).
+    this.version(2).stores({
+      holdings: '++id, userId, symbol, assetType, [userId+symbol]',
+      priceCache: 'key, userId, fetchedAt',
+      newsCache: '[userId+symbol], fetchedAt',
+      analystCache: '[userId+symbol], fetchedAt',
+      predictionCache: 'key, userId, fetchedAt',
+      portfolioAnalysisCache: '[userId+portfolioHash], fetchedAt',
+      transactions: '++id, userId, date, category, seedOrigin, [userId+date], [userId+category], [userId+seedOrigin]',
+      accounts: 'userId',
+      dashboardCache: 'key, userId, fetchedAt',
+      visionUsageLog: '[userId+date]',
     })
   }
 }

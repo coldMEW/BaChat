@@ -96,4 +96,10 @@ export const CACHE_TTL = {
   graph: 24 * 60 * 60 * 1000,        // 24h — correlation recomputes nightly
   predict: 6 * 60 * 60 * 1000,       // 6h — composite score
   portfolio: 12 * 60 * 60 * 1000,    // 12h — analysis for user's portfolio
+  // Dashboard buckets
+  categorize: 7 * 24 * 60 * 60 * 1000,  // 7d — merchant → category is stable
+  ocr: 30 * 24 * 60 * 60 * 1000,        // 30d — receipt OCR shouldn't change
+  impulse: 2 * 60 * 60 * 1000,          // 2h — impulse scores refresh with new tx
+  creditScore: 24 * 60 * 60 * 1000,     // 24h — credit projections daily
+  roast: 12 * 60 * 60 * 1000,           // 12h — roast per subject
 }

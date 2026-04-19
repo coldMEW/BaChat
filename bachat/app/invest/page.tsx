@@ -33,10 +33,30 @@ function getDisplayName(): string {
 }
 
 export default function InvestDashboard() {
+  // Read URL params ONCE on mount (avoids the Next.js dynamic-render deopt
+  // that `useSearchParams` triggers — which was making redirect navigation
+  // much slower than direct /invest visits).
+  const [bridge, setBridge] = useState<{ symbol: string; amount: number; txId: string } | null>(null)
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    const p = new URLSearchParams(window.location.search)
+    const symbol = (p.get('suggest') ?? '').toUpperCase()
+    if (!symbol) return
+    setBridge({
+      symbol,
+      amount: Number(p.get('amount') ?? '') || 0,
+      txId: p.get('redirect') ?? '',
+    })
+  }, [])
+  const redirectSymbol = bridge?.symbol ?? ''
+  const redirectAmount = bridge?.amount ?? 0
+  const redirectTxId = bridge?.txId ?? ''
+
   const [holdings, setHoldings] = useState<Holding[]>([])
   const [selected, setSelected] = useState<string | null>(null)
   const [loading, setLoading] = useState(true)
   const [showAdd, setShowAdd] = useState(false)
+  const [bridgeDismissed, setBridgeDismissed] = useState(false)
   const [section, setSection] = useState<Section>('overview')
   const [search, setSearch] = useState('')
   const [searchFocused, setSearchFocused] = useState(false)
@@ -223,9 +243,45 @@ export default function InvestDashboard() {
           </div>
         </header>
 
+        {redirectSymbol && !bridgeDismissed && !showAdd && (
+          <div className="px-6 pt-4 max-w-[1600px] mx-auto">
+            <div
+              className="surface-card p-4 flex items-center justify-between gap-4"
+              style={{ borderLeft: '3px solid var(--accent-primary)' }}
+            >
+              <div className="flex-1">
+                <div className="label" style={{ fontSize: 10 }}>Dashboard redirect</div>
+                <div className="text-sm mt-1" style={{ color: 'var(--text-primary)' }}>
+                  {redirectTxId ? 'That impulse purchase' : 'Your dashboard'} suggested redirecting{' '}
+                  <span className="font-mono font-semibold" style={{ color: 'var(--accent-primary-deep)' }}>
+                    ${redirectAmount.toFixed(0)}
+                  </span>
+                  {' '}into{' '}
+                  <span className="font-mono font-semibold">{redirectSymbol}</span>.
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => setBridgeDismissed(true)}
+                  className="btn-ghost text-xs"
+                >
+                  Dismiss
+                </button>
+                <button onClick={() => setShowAdd(true)} className="btn-primary text-xs">
+                  Pre-fill {redirectSymbol}
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
         {showAdd && (
           <div className="px-6 pt-4 max-w-[1600px] mx-auto">
-            <AddHoldingForm onAdd={onAdd} />
+            <AddHoldingForm
+              onAdd={onAdd}
+              initialSymbol={redirectSymbol}
+              hintAmount={redirectAmount || undefined}
+            />
           </div>
         )}
 
