@@ -19,6 +19,10 @@ const lora = Lora({
 export const metadata: Metadata = {
   title: 'Bachat',
   description: 'Behavioral finance + honest investment signals — your data, your browser.',
+  icons: {
+    icon: [{ url: '/icon.png', sizes: '480x520', type: 'image/png' }],
+    apple: [{ url: '/icon.png', sizes: '480x520', type: 'image/png' }],
+  },
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

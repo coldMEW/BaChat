@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState, useCallback } from 'react'
 import { UploadZone } from '@/components/dashboard/UploadZone'
 import { ExtractedPreview } from '@/components/dashboard/ExtractedPreview'
@@ -97,15 +98,8 @@ export function Sidebar({ active }: { active: string }) {
         style={{ background: 'var(--bg-panel)', borderRight: '1px solid var(--border-soft)' }}
       >
         {/* Logo */}
-        <div
-          className="w-10 h-10 rounded-xl flex items-center justify-center mb-2"
-          style={{ background: 'linear-gradient(135deg, #7B61FF, #5B3FE8)' }}
-        >
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M12 2 L22 7 L12 12 L2 7 Z" />
-            <path d="M2 17 L12 22 L22 17" />
-            <path d="M2 12 L12 17 L22 12" />
-          </svg>
+        <div className="w-10 h-10 rounded-xl overflow-hidden flex items-center justify-center mb-2">
+          <Image src="/icon.png" alt="Bachat" width={40} height={40} style={{ objectFit: 'contain' }} priority />
         </div>
 
         {/* Upload button — top of nav */}
