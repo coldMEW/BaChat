@@ -1,6 +1,8 @@
 # Bachat
 
-**Bachat** (Nepali: *"saving"*) is a privacy-first personal finance web app that turns your bank statements into actionable spending intelligence — entirely inside your browser. No bank logins, no data syncing, no servers storing your transactions. Everything stays local.
+**Bachat** (Nepali: *"saving"*) is a privacy-first personal finance app that truly understands you — not just your numbers. It learns your lifestyle, spots impulse spending before it drains your wallet, and shows you exactly how to redirect that money into investments that grow. No bank logins, no data syncing, no servers. Everything stays local, entirely in your browser.
+
+> **Your money. Your data. Your browser. No compromises.**
 
 ---
 
@@ -17,14 +19,16 @@
 
 ## Features at a glance
 
+- **100% local & private** — all your data lives in your browser's IndexedDB. Nothing is ever uploaded, stored, or shared. No account needed.
+- **Understands your lifestyle** — Bachat doesn't just categorise transactions. It learns your spending patterns, habits, and tendencies to give you advice that actually fits how you live.
+- **Impulse spending detection** — identifies emotional and discretionary purchases, quantifies exactly how much they cost your financial health, and shows you the recovery potential if you redirect them.
+- **Redirect impulse → investment** — see precisely how money wasted on impulse buys could grow as investments. Bachat connects the dots between your daily habits and your long-term wealth.
+- **Decision simulator** — before you spend, type the purchase (e.g. "Buy a new laptop for $1,200") and see projected changes to your Pulse score, credit, savings, and debt in real time.
 - **Universal statement parser** — drop a PDF, CSV, or photo of any bank statement from any bank in the world. Transactions are extracted and categorised automatically.
 - **Receipt scanning** — photograph a receipt and have it added as a transaction instantly.
-- **Impulse spending detection** — identifies discretionary purchases above threshold, quantifies how many Pulse score points you could recover by changing the pattern.
-- **Decision simulator** — type a purchase (e.g. "Buy a new laptop for $1,200") and see projected changes to your Pulse score, credit, savings, and debt before committing.
-- **Directional Score (DPS)** — a signed confidence-weighted signal across 4 families: technical (RSI, MACD, SMA), sentiment (news analysis), analyst (consensus + price targets), and macro (Fed rate, CPI, DXY).
+- **Directional Score (DPS)** — a signed confidence-weighted investment signal across 4 families: technical (RSI, MACD, SMA), sentiment (news analysis), analyst (consensus + price targets), and macro (Fed rate, CPI, DXY).
 - **Knowledge graph** — visualises correlations between your holdings.
 - **Diversification engine** — computes HHI, sector concentration, asset-class entropy and suggests rebalancing moves.
-- **100% local** — all transaction data lives in your browser's IndexedDB (via Dexie). Nothing is ever sent to a server.
 
 ---
 
