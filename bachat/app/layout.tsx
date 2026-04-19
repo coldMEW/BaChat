@@ -17,7 +17,7 @@ const lora = Lora({
 })
 
 export const metadata: Metadata = {
-  title: 'Bachat · Invest',
+  title: 'Bachat',
   description: 'Behavioral finance + honest investment signals — your data, your browser.',
 }
 
@@ -27,7 +27,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${lora.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col" suppressHydrationWarning>{children}</body>
     </html>
   )
 }

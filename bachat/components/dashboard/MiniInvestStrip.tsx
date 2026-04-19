@@ -70,7 +70,7 @@ export function MiniInvestStrip() {
           const up = changePct >= 0
           return (
             <Link
-              key={holding.symbol}
+              key={holding.id ?? holding.symbol}
               href={`/invest?focus=${encodeURIComponent(holding.symbol)}`}
               className="flex items-center justify-between px-3 py-2 rounded-lg transition-all hover:shadow"
               style={{ background: 'var(--bg-card-soft)' }}

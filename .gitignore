@@ -22,3 +22,6 @@ dist/
 
 # Cache
 .cache/
+
+# Reference / scratch files — not part of the app
+noneed/
