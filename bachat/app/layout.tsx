@@ -18,7 +18,7 @@ const lora = Lora({
 
 export const metadata: Metadata = {
   title: 'Bachat',
-  description: 'Behavioral finance + honest investment signals — your data, your browser.',
+  description: 'Bachat understands your lifestyle — not just your numbers. 100% local & private, it spots impulse spending, learns your habits, and redirects wasted money into investments that actually grow. Personalized finance that works for you, entirely in your browser.',
   icons: {
     icon: [{ url: '/icon.png', sizes: '480x520', type: 'image/png' }],
     apple: [{ url: '/icon.png', sizes: '480x520', type: 'image/png' }],
